@@ -37,7 +37,11 @@
     <link rel="stylesheet"
         href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">       
 
-
+<!-- Included Fonts as per indicated on original index.thml -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+          
 
       
 <style type="text/css">
@@ -76,8 +80,17 @@
         padding-bottom: 40px; */
             font-family:'Open Sans', Helvetica, Arial, sans-serif;
       }
+      
+     /*Included as per original index.html */ 
+     .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      
+      /* This is not in the original index.html. THIS IS WHAT WAS CAUSING THE ERROR of not correcting itself to mobile mode 
       .container {
         width: 960px;
+        */
       }
       p.lead {
         padding-top: 1.5%;
@@ -96,8 +109,8 @@
             padding: 2% 0%;
         }        
       .actions {
-            background-color: #903030;
-            padding: 2.5% 0%;
+            background-color: #903030; /*color is different, original is #343434 */
+            padding: 2.5% 0%;  /*original padding is 3% 0% */
         }
         
       .video, .thermometer, .order, .social, .statistics {
@@ -124,6 +137,8 @@
         border: 1px solid;
       }
         */       
+  
+  
     /* Marketing Copy and Footer, but Copy-right, where is it? */
     .copy {
             padding-top: 2.5%;
@@ -158,7 +173,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Back on Blue</a>
+          <a class="brand" href="#">1-Click Finance</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -176,26 +191,27 @@
 <div class="container">
  <div class="row-fluid heading">
 	       <div class="span12">
-                <h1>One Click Finance Manager</h1>
+                <h1>1-Click Finance Manager</h1>
 	       </div>
  </div>
 	    <div class="row-fluid subheading">
 	       <div class="span12">
-	           <p class="lead">Automatically get a view of you Financial situation with one Click</p>
+	           <p class="lead">The super simple Finance Manager to help you get through the month</p>
 	       </div>
 	    </div>
     
     
 <div class="row-fluid pitch">
     <div class="span5 offset1 video">
-	           <img class="img-polaroid" src="http://placehold.it/480x300">
+	           <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
     </div>
         
             
-<!-- Starts Trick from hw4 instructions -->            
+<!-- Starts Trick from hw4 instructions . ORIGINAL uses lindediv-c-->            
     <div class="span5 actions">
+    		<div class="row-fluid"> <!-- added as per original undex.html -->
             <div class="span8 offset2">
-	           <div class="Statistics">
+	           <div class="row-fluid statistics">
                 <div class="span4">
                  <div class="linediv-r linediv-l">
                     <h3>1000</h3> <p>bakers</p>
@@ -213,21 +229,29 @@
                 </div>
             </div>
         </div>
+        <div class="row-fluid"> <!-- added as per original undex.html -->
         <div class="span10 offset1">
             <div class="thermometer progress active">
                 <div class="bar bar-success" style="width: 60%;"></div>
                 <div class="bar bar-warning" Style="width: 40%;"></div>
             </div>
         </div>
+        </div> <!-- added as per original undex.html -->
+        <div class="row-fluid"> <!-- added as per original undex.html -->
         <div class="span6 offset3 order">
             <button class="btn btn-success btn-large">Preorder</button>
         </div>
+        </div> <!-- added as per original undex.html -->
+        <div class="row-fluid"> <!-- added as per original undex.html -->
         <div class="span8 offset2 social">
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
         </div>
      </div>
  </div>
+ </div> <!-- added as per original undex.html -->
+ </div> <!-- added as per original undex.html -->
+ 
 <!-- foi substituido
       </div>
 	           <div class="order">
@@ -241,25 +265,33 @@
 -->
 	    <div class="row-fluid section1">
             <div class="span5 offset1 asset">
-                <img class="img-polaroid" src="pic1.jpg">
+                <img class="img-polaroid" alt="Placeholder" src="/home/ubuntu/bitstarter/picture.jpg">
             </div>    
 	       <div class="span5 copy">
                <h4>Finance app as it should always have been</h4>
                <p>
-                Simple to use. Have no time to classify expenses or analyse fancy Graphs? This app will go through all your personal accounts, credit cards bills, and automatically return you a summary of your finantial status. Direct to the point.
+                Automatically get all your accounts, credit-cards, monthly bills, debt payments in one single screen. The app will read all your extracts and update you. No more login, logout and manual compliation hasles on dozens of accounts.
                </p>
 	       </div>
 	    </div>
             
 	    <div class="row-fluid section2">
 	       <div class="span5 offset1 copy copy-right">
-                <img class="img-polaroid" src="ID-10079681.jpg">
-	           <h4>Set your goals and let it help you achieve it</h4>
+	           <h4>Make your money last all month</h4>
                <p>
-                   What is your dream? Want to reduce your debt? Want to save for a new car? Vacation? OneClick Finance Manager will automatically classify your expenses and help you quickly know how much you can save from where.
-               </p>
+                   The app does only one thing. It classifies your expenses in two types: unavoidable and all others. Unavoidable expenses are the ones you have already commited (rent, debt payment, credit card purchases) and Hard-to-save Basic living expenses (food, fuel, energy bills). All the others are things like Restaurants, Clothing , hangging out...<br>
+               It then calculates the unavoidable expenses yet to come, what is paid, your income, what you spent so far on other stuff and then gives you how much money you have left, if any, to be positive in the rest of the month.</p>   
 	       </div>
-	    </div>
+
+	  
+	  <!-- Included as per original index.html -->   
+	  <div class="span5 asset">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
+        </div>
+      </div>
+</div>
+
+	    
 	    <div class="row-fluid faq">
 	       <div class="span10 offset1">
 	           <h3>FAQ</h3>
@@ -291,17 +323,20 @@
                             Pergunta frequentemente feita.
                         </div>
                  </div>
-	            </div>
-                   
+	            </div>          
                </div>   
 	       </div>
         </div>
         
-	    <div class="row-fluid footer">
-	       <div class= "span12">
-	           Footer
-	       </div>
+<div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
+        </div>
+      
 	    </div>
-    </div>
   </body>
 </html>
